@@ -16,8 +16,12 @@ sudo chmod +x /usr/local/bin/docker-compose
 docker -v 
 docker-compose -v
 
+$ docker-compose -f docker-compose.prod.yml build
+$ docker-compose -f docker-compose.prod.yml up -d
+$ docker exec -d btreProd_container python3 manage.py runserver 0.0.0.0:8000
 
-
+$ cd ~/btre_23rdfeb/app
+$chmod +x entrypoint.prod.sh
 
 23rd Feb 2020
 =============
